@@ -3,7 +3,7 @@ name : testing testing workflow
 # Evets to fire the workflow
 on:
     push:
-        branches: main
+        branches: hello                     # changed from nmain to 'Hello" so it wouldnt run (instead of deleting d file)'
 jobs:                                       #the job you want to automate
     say-hello:                              #your first job name
         runs-on: ubuntu-latest              # On which platform should the job run
